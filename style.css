@@ -86,8 +86,24 @@ p::after {
     color: hsl(228, 89%, 41%);
 }
 
-@media (max-width:900px){
-    .attribution{
+@media (max-width:900px) {
+    .attribution {
         margin: 0;
+    }
+}
+
+@media(max-width:400px) {
+    .container {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        height: auto;
+
+
+    }
+
+    img{
+        display: none;
     }
 }

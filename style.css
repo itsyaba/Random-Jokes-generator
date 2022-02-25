@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+:root {
+    --Light--cyan: hsl(193, 38%, 86%);
+    --Neon-green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+
+}
+
+
+body {
+    font-family: 'Teko', sans-serif;
+    background-color: var(--Grayish-Blue);
+    color: var(--Light--cyan);
+}
+
+.container {
+    background-color: var(--Dark-Grayish-Blue);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 535px;
+    height: 345px;
+
+}
+
+h3 {
+    color: var(--Neon-green);
+}
+
+.btn {
+    position: absolute;
+    top: 95%;
+    background-color: var(--Neon-green);
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    font-weight: 800;
+    color: var(--Grayish-Blue);
+}
+
+p {
+    font-size: 30px;
+    text-align: center;
+    padding: 0 30px;
+}
+
+p::before {
+    content: open-quote;
+}
+
+p::after {
+    content: close-quote;
+}
+
+.btn img {
+    width: 20px;
+    /* white-space: 10px; */
+    line-height: 0px;
+}
+
+.attribution {
+    font-size: 10px;
+    text-align: center;
+    margin: 0 350px;
+}
+
+.attribution p {
+    background-color: darkcyan;
+    border-radius: 10px;
+
+}
+
+.attribution a {
+    color: hsl(228, 89%, 41%);
+}
+
+@media (max-width:900px){
+    .attribution{
+        margin: 0;
+    }
+}
